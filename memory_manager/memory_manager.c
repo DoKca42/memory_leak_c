@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:39:10 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/17 23:35:19 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/18 01:49:17 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ void	ftm_close(int fd, t_memng **mng)
 	back = 0;
 	while (current != NULL)
 	{
-		if ((unsigned long)current->mem == (unsigned long)mem)
+		if (current->fd == fd)
 		{
 			if (back != 0)
 				back->next = current->next;
