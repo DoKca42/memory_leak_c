@@ -4,16 +4,20 @@
 #include "utils_manager.c"
 #include "memory_manager.c"
 
-void print_list(t_memng *head) {
-    t_memng *current = head;
-    printf("-----------------\n");
-    while (current != NULL) {
-    	if ((unsigned long)current->mem != 0)
-        	printf(" %lu\n", (unsigned long)current->mem);
-        else
-        	printf(" %lu\n", (unsigned long)current->fd);
-        current = current->next;
-    }
+void	print_list(t_memng *head)
+{
+	t_memng	*current;
+
+	current = head;
+	printf("-----------------\n");
+	while (current != NULL)
+	{
+		if ((unsigned long)current->mem != 0)
+			printf(" %lu\n", (unsigned long)current->mem);
+		else
+			printf(" %lu\n", (unsigned long)current->fd);
+		current = current->next;
+	}
 }
 
 void function_de_qualite(t_memng **m)

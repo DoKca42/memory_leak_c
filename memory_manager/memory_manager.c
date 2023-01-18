@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:39:10 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/18 01:49:17 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/18 12:40:44 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	*ftm_malloc(size_t sz, t_memng **mng)
 
 void	ftm_free(void *mem, t_memng **mng)
 {
-	t_memng *current;
-	t_memng *back;
+	t_memng	*current;
+	t_memng	*back;
 
 	if (!mem)
 		return ;
@@ -67,8 +67,8 @@ int	ftm_open(char *pathname, int flags, t_memng **mng)
 
 void	ftm_close(int fd, t_memng **mng)
 {
-	t_memng *current;
-	t_memng *back;
+	t_memng	*current;
+	t_memng	*back;
 
 	if (fd < 0)
 		return ;
@@ -94,10 +94,9 @@ void	ftm_close(int fd, t_memng **mng)
 
 void	ftm_free_all(t_memng **mng)
 {
-	t_memng *current;
-	t_memng *tmp;
+	t_memng	*current;
+	t_memng	*tmp;
 
-	
 	current = *mng;
 	if (!current)
 		return ;
