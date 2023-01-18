@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:39:10 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/18 12:40:44 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/18 12:52:02 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	ftm_open(char *pathname, int flags, t_memng **mng)
 
 	fd = open(pathname, flags);
 	if (fd < 0)
-		return (0);
+		return (fd);
 	new = ft_memnew_manager(0, 1, fd);
 	ft_memadd_back_manager(mng, new);
 	return (fd);
