@@ -23,4 +23,4 @@ Utiliser `memory_manager_2` :\
 ##
 &nbsp;&nbsp;`ftm_add_track(void *mem)`&nbsp;&nbsp;fonction pour ajouter un adresse allouée dans la liste si elle n'y est pas déjà
 ##
-&nbsp;&nbsp;`ftm_add_track(void *mem)`&nbsp;&nbsp;fonction pour retirer un adresse de la liste
+&nbsp;&nbsp;`ftm_rm_track(void *mem)`&nbsp;&nbsp;fonction pour retirer un adresse de la liste
