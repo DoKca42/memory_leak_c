@@ -1,7 +1,7 @@
 
 # 42 MEMORY MANAGER
 
-Des fonctions à utiliser pour ne plus avoir de porblème de memory leak\
+Des fonctions à utiliser pour ne plus avoir de problème de memory leak\
 &nbsp;\
 &nbsp;\
 &nbsp;\
