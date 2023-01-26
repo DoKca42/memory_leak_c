@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 20:09:20 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/25 20:45:31 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/26 03:27:53 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ void	ftm_free(void *mem);
 int		ftm_open(char *pathname, int flags);
 void	ftm_close(int fd);
 void	ftm_free_all(void);
+void	ftm_add_track(void *mem);
+void	ftm_rm_track(void *mem);
 
 #endif

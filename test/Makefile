@@ -10,17 +10,20 @@ OBJS	:= ${SRCS:.c=.o}
 FLAGS 	:= -Wall -Wextra -Werror
 CC 		:= gcc $(FLAGS)
 
-all: $(NAME)
+all: mm $(NAME)
 
 mm:
 	@$(MAKE) -C $(MM)
 
 clean:
 	rm -f $(OBJS)
+	@$(MAKE) -C $(MM) clean
+
 fclean: clean
 	rm -f $(NAME)
+	@$(MAKE) -C $(MM) fclean
 
-re: fclean $(NAME)
+re: fclean all
 
 $(NAME): $(SRCS) $(OBJS)
-	@$(CC) $(OBJS) $(LIBS) $(HEADERS) -o $(NAME)
+	@$(CC) $(OBJS) $(LIBS) -o $(NAME)

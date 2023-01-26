@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 23:03:46 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/26 00:32:42 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/26 03:33:14 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,9 @@ int	main(void)
 	a = ftm_malloc(sizeof(char) * 15);
 	ft_rr();
 	print_list();
-	ftm_free_all();
+	ftm_rm_track(m);
+	free(m);
 	print_list();
+	ftm_free_all();
 	return (0);
 }

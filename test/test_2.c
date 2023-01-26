@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 00:30:57 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/26 00:34:23 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/26 03:25:05 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 void	ft_rr(void)
 {
 	char	*r;
+	char	*b;
 
 	r = ftm_malloc(sizeof(char) * 14);
+	b = malloc(sizeof(char) * 14);
+	ftm_add_track(b);
 }
