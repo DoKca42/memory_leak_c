@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 20:09:20 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/26 03:27:53 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/26 04:13:57 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ typedef struct s_memng
 t_memng	**ft_head_lst(void);
 t_memng	*ft_memnew_manager(void *mem, int type, int fd);
 void	ft_memadd_back_manager(t_memng **lst, t_memng *new);
+int		ft_is_in_lst(void *mem);
 void	*ftm_malloc(size_t sz);
 void	ftm_free(void *mem);
 int		ftm_open(char *pathname, int flags);

@@ -6,7 +6,7 @@
 /*   By: loculy <loculy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 00:49:05 by loculy            #+#    #+#             */
-/*   Updated: 2023/01/26 03:27:21 by loculy           ###   ########.fr       */
+/*   Updated: 2023/01/26 04:14:41 by loculy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ftm_add_track(void *mem)
 	t_memng	**mng;
 
 	if (!mem)
+		return ;
+	if (ft_is_in_lst(mem) == 1)
 		return ;
 	mng = ft_head_lst();
 	new = ft_memnew_manager(mem, 0, 0);
